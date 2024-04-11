@@ -1,9 +1,21 @@
-import "./App.css";
+import { Route, Routes } from 'react-router-dom';
+import { lazy } from 'react';
+import SharedLayout from './components/SharedLayout';
+
+const Home = lazy(() => import('./pages/Home'));
+const Nannies = lazy(() => import('./pages/Nannies'));
+const Favorites = lazy(() => import('./pages/Favorites'));
 
 function App() {
   return (
     <>
-      <h1>My Template</h1>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path="nannies" element={<Nannies />} />
+          <Route path="favorites" element={<Favorites />} />
+        </Route>
+      </Routes>
     </>
   );
 }

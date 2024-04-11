@@ -2,7 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/HelveticaNeue-Regular.otf) format('otf');
+  }
+
+  @font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(./fonts/HelveticaNeueMedium.otf) format('otf');
+  }
+
+  @font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(./fonts/HelveticaNeueBold.otf) format('otf');
+  }
+
+  body {
+    font-family: "Helvetica", system-ui, sans-serif;
+  }
+}
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -69,4 +103,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
