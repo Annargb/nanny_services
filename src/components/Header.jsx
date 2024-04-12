@@ -1,9 +1,8 @@
 import { Link, NavLink } from 'react-router-dom';
 
-
 const Header = () => {
   return (
-    <div className="container absolute bg-green flex items-center justify-between max-w-1376px h-88px border-b border-borderColor px-96px py-20px">
+    <div className="container absolute z-10 flex items-center justify-between max-w-1376px h-88px border-b border-borderColor px-96px py-20px">
       <Link
         to="/"
         className="text-white text-xl font-medium leading-117 tracking-tighter"
@@ -14,22 +13,19 @@ const Header = () => {
         <nav className="flex gap-10">
           <NavLink
             to="/"
-            className="text-white font-normal text-sm leading-tight tracking-tight active:text-yellow"
-            activeClassName="text-yellow"
+            className="text-white font-normal text-sm leading-tight tracking-tight"
           >
             Home
           </NavLink>
           <NavLink
             to="/nannies"
-            className="text-white font-normal text-sm leading-tight tracking-tight active:text-yellow"
-            activeClassName="text-yellow"
+            className="text-white font-normal text-sm leading-tight tracking-tight"
           >
             Nannies
           </NavLink>
           <NavLink
             to="/favorites"
-            className="text-white font-normal text-sm leading-tight tracking-tight active:text-yellow"
-            activeClassName="text-yellow"
+            className="text-white font-normal text-sm leading-tight tracking-tight"
           >
             Favorires
           </NavLink>

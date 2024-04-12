@@ -6,7 +6,7 @@ const SharedLayout = () => {
   return (
     <div className="container px-32px">
       <Header />
-      <main className='overflow-hidden'>
+      <main>
         <Suspense fallback={null}>
           <Outlet />
         </Suspense>
