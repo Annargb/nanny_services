@@ -81,7 +81,7 @@ export default {
         107: '1.07',
       },
       backgroundImage: {
-        hero: "linear-gradient(to right bottom, rgba(18, 20, 23, 0.6), rgba(18, 20, 23, 0.6)), url('/src/images/home.png')",
+        hero: "linear-gradient(to right bottom, rgba(18, 20, 23, 0.6), rgba(18, 20, 23, 0.6)), url('./src/assets/home.png')",
       },
     },
   },
